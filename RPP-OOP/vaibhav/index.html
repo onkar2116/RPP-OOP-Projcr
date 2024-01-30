@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arogyahetu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="loginForm">
+                <h2>Login</h2>
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="form-container">
+            <form id="signupForm">
+                <h2>Sign Up</h2>
+                <label for="signupName">Name:</label>
+                <input type="text" id="signupName" required>
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" required>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="js.js"></script>
+    <h1>Arogyahetu that knows about your health..</h1>
+    <h2>Fill your information</h2>
+    <div>
+        <label for="firstName">#First Name</label>
+        <input type="text" name="firstName" id="firstName">
+        <label for="middleName">#Middle Name</label>
+        <input type="text" name="middleName" id="middleName">
+        <label for="lastName">#Last Name</label>
+        <input type="text" name="lastName" id="lastName">
+    </div>
+    
+    <div>
+        <label for="username">#Enter your username*</label>
+        <input type="text" name="username" id="username">
+    </div>
+    <div>
+        <label for="email">#Enter your valid email id*</label>
+        <input type="text" name="email" id="email">
+    </div>
+
+    <div>
+        <label for="phoneNumber">#Enter mobile number*</label>
+        <input type="number" name="phoneNumber" id="phoneNumber">
+    </div>
+
+    <div>
+        Gender
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="doctor">Doctor to patient</label>
+        
+        <div>
+            <label for="details">#Details</label>
+            <textarea name="details" id="details" cols="30" rows="4"></textarea>
+        </div>
+        
+        <div>
+            Select your Role 
+            <div>
+                <select name="role" id="role">
+                    <option value="Doctor">Doctor</option>
+                    <option value="Patient">Patient</option>
+                </select>
+            </div>
+            <img src="image.png" alt="example">
+        </div>
+
+        <button type="button" id="saveButton">Save</button>
+    </div>
+
+    <div id="displayInfo"></div>
+
+    <!-- Include this line at the bottom of the body section of your HTML -->
+    <script src="script.js"></script>
+</body>
+</html>
